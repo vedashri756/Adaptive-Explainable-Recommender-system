@@ -1,4 +1,4 @@
-#Adaptive Explainable Recommender System
+# Adaptive Explainable Recommender System
 Overview
 
 This project implements an adaptive recommender system that dynamically balances personalization, explainability, and stability instead of optimizing accuracy alone.
@@ -6,7 +6,7 @@ The system combines multiple recommendation strategies and exposes their trade-o
 
 Unlike traditional recommender systems that act as black boxes, this system makes model decisions transparent and user-controllable.
 
-#Key Objectives
+# Key Objectives
 
 Build multiple recommendation models with complementary strengths
 
@@ -18,7 +18,7 @@ Provide item-level explanations for recommendations
 
 Present results through a clean, interactive UI
 
-#System Architecture
+# System Architecture
 
 The system consists of four logical layers:
 
@@ -66,7 +66,7 @@ Per-item explanations describing why each item was recommended
 
 Metrics that expose system trade-offs
 
-#Adaptivity Logic
+# Adaptivity Logic
 
 Instead of using a single fixed model, the system computes dynamic weights:
 
@@ -92,7 +92,7 @@ Whether the recommendation was driven by similarity, popularity, or a hybrid sig
 
 Explanations are rule-based and human-readable, ensuring clarity over complexity.
 
-#Metrics
+# Metrics
 
 The system reports interpretable, system-level metrics:
 
@@ -118,7 +118,7 @@ Item-level explanation cards
 
 The dashboard is designed to make model behavior observable, not hidden.
 
-#Tech Stack
+# Tech Stack
 
 Python 3.11
 
@@ -130,7 +130,7 @@ Streamlit
 
 Matplotlib (for visualization stability)
 
-#Project Structure
+# Project Structure
 adaptive_recommender/
 │
 ├── data/
@@ -153,7 +153,7 @@ adaptive_recommender/
 ├── requirements.txt
 └── README.md
 
-#How to Run
+# How to Run
 
 Install dependencies:
 
@@ -164,12 +164,12 @@ Run the dashboard:
 
 streamlit run app/dashboard.py
 
-#Key Takeaway
+# Key Takeaway
 
 This project demonstrates that recommendation systems are not just prediction problems, but decision systems with trade-offs.
 By making those trade-offs explicit and controllable, the system prioritizes trust, transparency, and robustness alongside performance.
 
-#Future Extensions
+# Future Extensions
 
 Content-based feature embeddings
 
